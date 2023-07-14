@@ -1,5 +1,5 @@
 from enum import Enum
-from chained_hash import ChainedHash
+from open_hash import OpenHash
 
 Menu = Enum('Menu', ['Add', 'Delete', 'Search', 'Dump', 'Exit'])
 
@@ -11,7 +11,7 @@ def select_menu() -> Menu:
         if 1 <= n <= len(Menu):
             return Menu(n)
         
-hash = ChainedHash(13)
+hash = OpenHash(13)
 
 while True:
     menu = select_menu()
