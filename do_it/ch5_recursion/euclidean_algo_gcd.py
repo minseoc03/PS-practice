@@ -1,3 +1,14 @@
+#Euclidean Algorithm
+#Example below
+"""
+22 8 
+8 6 <- smaller integer and remainder
+6 2
+2 0 <- if remainder becomes 0, stop the recursion
+2
+"""
+
+#gcd function is also in math module
 def gcd(x: int, y: int) -> int:
     if y == 0:
         return x
