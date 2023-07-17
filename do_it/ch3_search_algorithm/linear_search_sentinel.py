@@ -14,18 +14,6 @@ def seq_search(seq: Sequence, key: Any) -> int:
 
     i = 0
 
-    #my code
-    #this makes sentinel method useless because sential method is used to reduce the number of condition checkings
-    #but by using two if statements in the while loop, it makes no change compared to original sequence search
-    while True:
-        if i == len(a):
-            return -1
-        if a[i] == key:
-            return i
-        i += 1
-
-    #textbook code
-    """
     while True:
         #only used one if statement in while loop
         if a[i] == key:
@@ -33,7 +21,6 @@ def seq_search(seq: Sequence, key: Any) -> int:
         i += 1
     
     return -1 if i == len(seq) else i
-    """
 
 if __name__ == '__main__':
     num = int(input("Enter the number of element: "))
